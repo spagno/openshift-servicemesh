@@ -7,7 +7,7 @@ https://docs.openshift.com/container-platform/3.11/servicemesh-install/serviceme
 Download:<br>
 https://github.com/openshift/origin/releases/download/v3.11.0/openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit.tar.gz
 
-** oc cluster patching**
+**oc cluster patching**
 
 create a file:<br> $HOME/.occluster/kube-apiserver/master-config.patch<br>
 with this content:<br>
@@ -50,7 +50,7 @@ $ sysctl vm.max_map_count=262144
 $ oc cluster up --base-dir="$HOME/.occluster"
 ```
 
-** istio operator **
+**istio operator**
 
 Download ocp resources from:<br>
 https://github.com/Maistra/openshift-ansible/tree/maistra-0.3/istio
@@ -105,13 +105,13 @@ execute:
 $ oc create -f istio-installation.yaml -n istio-operator
 ```
 
-** istio control pane **
+**istio control pane**
 
 ```bash
 $ oc create -f cr.yaml -n istio-operator
 ```
 
-** verify the installation **
+**verify the installation**
 
 ```bash
 $ oc get pods -n istio-system
