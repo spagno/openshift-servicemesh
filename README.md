@@ -112,7 +112,7 @@ $ oc create -f istio-installation.yaml -n istio-operator
 execute:
 
 ```bash
-$ oc create -f cr.yaml -n istio-operator
+$ oc create -f cr-full.yaml -n istio-operator
 ```
 
 ## verify the installation
