@@ -9,7 +9,7 @@ https://github.com/openshift/origin/releases/download/v3.11.0/openshift-origin-c
 
 **oc cluster patching**
 
-create a file:<br> $HOME/.occluster/kube-apiserver/master-config.patch<br>
+create a file:<br> *$HOME/.occluster/kube-apiserver/master-config.patch*<br>
 with this content:<br>
 ```
 admissionConfig:
@@ -33,7 +33,7 @@ $ oc ex config patch master-config.yaml.prepatch -p "$(cat master-config.patch)"
 ```
 
 create a file:<br>
-/etc/sysctl.d/99-elasticsearch.conf
+*/etc/sysctl.d/99-elasticsearch.conf*<br>
 with this content:<br>
 ```
 vm.max_map_count = 262144
@@ -44,7 +44,7 @@ execute:
 $ sysctl vm.max_map_count=262144
 ```
 
-** oc cluster up**
+**oc cluster up**
 
 ```bash
 $ oc cluster up --base-dir="$HOME/.occluster"
@@ -63,7 +63,7 @@ $ oc login -u system:admin
 $ oc new-app -f istio_community_operator_template.yaml
 ```
 
-create a istio-installation resource named *istio-installation.yaml* with this content:<br>
+create a istio-installation resource named *istio-installation.yaml*<br>with this content:<br>
 
 ```
 apiVersion: "istio.openshift.com/v1alpha1"
