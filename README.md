@@ -60,8 +60,8 @@ https://github.com/Maistra/openshift-ansible/tree/maistra-0.3/istio
 execute:<br>
 
 ```bash
-$ oc new-project istio-operator
 $ oc login -u system:admin
+$ oc new-project istio-operator
 $ oc new-app -f istio_community_operator_template.yaml
 ```
 
