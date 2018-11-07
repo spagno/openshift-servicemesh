@@ -101,18 +101,12 @@ spec:
       repo: https://github.com/fabric8-launcher/launcher-booster-catalog.git
 ```
 
-execute:
-
-```bash
-$ oc create -f istio-installation.yaml -n istio-operator
-```
-
 ## istio control pane
 
 execute:
 
 ```bash
-$ oc create -f cr-full.yaml -n istio-operator
+$ oc create -f istio-installation.yaml -n istio-operator
 ```
 
 ## verify the installation
